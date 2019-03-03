@@ -1,0 +1,93 @@
+{
+  "contracts": {
+    "Faucet": {
+      "address": "0x5880E19Ee2390670A04CeDf059d36Dcb9f7be73d",
+      "constructorCode": "608060405234801561001057600080fd5b50610376806100206000396000f3fe",
+      "bodyBytecodeHash": "e608f9697338740da2255a164f331003df776cde29a6c66b1da0b438f96fe1ac",
+      "localBytecodeHash": "bbc74b1f27374feeec60f09897c5c83ee920ebf69f0dd71cb2dc1e2acee434c6",
+      "deployedBytecodeHash": "bbc74b1f27374feeec60f09897c5c83ee920ebf69f0dd71cb2dc1e2acee434c6",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 107,
+          "type": "t_bool",
+          "src": "757:24:2"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 109,
+          "type": "t_bool",
+          "src": "876:25:2"
+        },
+        {
+          "contract": "Initializable",
+          "path": "zos-lib/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 158,
+          "type": "t_array:50<t_uint256>",
+          "src": "1891:29:2"
+        },
+        {
+          "contract": "Faucet",
+          "path": "contracts/Faucet.sol",
+          "label": "erc20Contract",
+          "astId": 7,
+          "type": "t_address",
+          "src": "172:20:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "buildcoin-faucet/Faucet": [
+      {
+        "address": "0xaBF88E08Ac8f5AD6D91f88F394c8A296F9d064fC",
+        "version": "0.1.0",
+        "implementation": "0x5880E19Ee2390670A04CeDf059d36Dcb9f7be73d"
+      }
+    ]
+  },
+  "zosversion": "2.2",
+  "version": "0.1.0",
+  "proxyAdmin": {
+    "address": "0x955EC37c516f22EFFEe3660eea50B4A893dc5c39"
+  }
+}
